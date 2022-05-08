@@ -91,6 +91,7 @@ a {
 
 .navigation {
     display: flex;
+
 }
 .container-top-line {
     display: flex;
@@ -104,6 +105,7 @@ a {
     line-height: 31px;
     letter-spacing: 0.03em;
     margin-right: 93px;
+    
 }
 
 .logo-web {
@@ -145,7 +147,7 @@ a {
     margin-right: 50px;
 }
 
-.contacts-link {
+.contact-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -153,8 +155,8 @@ a {
     color: var(--text-color);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-color);
 }
 /* ============банер/фильтер============= */
