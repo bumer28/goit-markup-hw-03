@@ -23,12 +23,12 @@
   <body>
     <!--Шапка-->
     <header class="top-line">
-      <div class="container">
+      <div class="container container top-line">
         <a class="logo-home" href="index.html"
           ><span class="logo-web">Web</span
           ><span class="logo-studio">Studio</span></a
         >
-        <nav class="navigation">
+        <nav class="nav-navigation">
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link selected" href="index.html">Студия</a>
@@ -56,38 +56,38 @@
     <main>
       <!--Банер-->
       <section class="hero">
-        <div class="container">
+        <div class="container-hero">
           <h1 class="hero-slogan">Эффективные решения для вашего бизнеса</h1>
           <button class="modal-btn" type="button">Заказать услугу</button>
         </div>
       </section>
       <!--Особенности-->
-      <section class="features">
+      <section class="features section">
         <div class="container">
-          <h2 hidden>Особенности</h2>
+          <h2 class="section-title visually-hidden">Особенности</h2>
           <ul class="features-list">
-            <li>
+            <li class="features-item">
               <h3 class="title-feature">Внимание к деталям</h3>
               <p class="descktription-feature">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="title-feature">Пунктуальность</h3>
               <p class="descktription-feature">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="title-feature">Планирование</h3>
               <p class="descktription-feature">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <h3 class="title-feature">Современные технологии</h3>
               <p class="descktription-feature">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -98,7 +98,7 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="gallery-previews">
+      <section class="gallery-previews section">
         <div class="container">
           <h2 class="preview-title">Чем мы занимаемся</h2>
           <ul class="preview-list">
@@ -130,49 +130,57 @@
         </div>
       </section>
       <!--Наша команда-->
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul class="team-list">
-            <li class="team-item">
+          <ul class="team-card-list">
+            <li class="card-item">
               <img
-                src="./images/Игорь.jpg"
+                src="./images/comanda/Игорь.jpg"
                 alt="Игорь"
                 width="270"
-                height="368"
+                height="260"
               />
-              <h3 class="member-name">Игорь Демьяненко</h3>
-              <p class="member-metier" lang="en">Product Designe</p>
+              <div class="card-title">
+                <h3 class="member-name">Игорь Демьяненко</h3>
+                <p class="member-metier" lang="en">Product Designe</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="card-item">
               <img
-                src="./images/Ольга.jpg"
+                src="./images/comanda/Ольга.jpg"
                 alt="Ольга"
                 width="270"
-                height="368"
+                height="260"
               />
-              <h3 class="member-name">Ольга Репина</h3>
-              <p class="member-metier" lang="en">Frontend Developer</p>
+              <div class="card-title">
+                <h3 class="member-name">Ольга Репина</h3>
+                <p class="member-metier" lang="en">Frontend Developer</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="card-item">
               <img
-                src="./images/Колька.jpg"
+                src="./images/comanda/Колька.jpg"
                 alt="Колька"
                 width="270"
-                height="368"
+                height="260"
               />
-              <h3 class="member-name">Николай Тарасов</h3>
-              <p class="member-metier" lang="en">Marketing</p>
+              <div class="card-title">
+                <h3 class="member-name">Николай Тарасов</h3>
+                <p class="member-metier" lang="en">Marketing</p>
+              </div>
             </li>
-            <li class="team-item">
+            <li class="card-item">
               <img
-                src="./images/Мишка.jpg"
+                src="./images/comanda/Мишка.jpg"
                 alt="Мишка"
                 width="270"
-                height="368"
+                height="260"
               />
-              <h3 class="member-name">Михаил Ермаков</h3>
-              <p class="member-metier" lang="en">UI Designer</p>
+              <div class="card-title">
+                <h3 class="member-name">Михаил Ермаков</h3>
+                <p class="member-metier" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -186,20 +194,20 @@
           >
           <address class="footer-address">
             <ul class="footer-contacts-list">
-              <li class="contact-item">
+              <li class="footer-contact-item">
                 <a
-                  class="contact-link"
+                  class="footer-contact-link"
                   href="https://goo.gl/maps/jhVAWQaJCBuwxQd86"
                   ><p class="map">г. Киев, пр-т Леси Украинки, 26</p></a
                 >
               </li>
-              <li class="contact-item">
-                <a class="contact-link" href="mailto:info@devstudio.com"
+              <li class="footer-contacts-item">
+                <a class="footer-contact-link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="contact-item">
-                <a class="contact-link" href="tel:+380961111111"
+              <li class="footer-contact-item">
+                <a class="footer-contact-link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>

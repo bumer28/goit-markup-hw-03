@@ -21,7 +21,55 @@ body {
     font-family: var(--primary-font);
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
 .container {
+    outline: 1px solid red;
+    box-sizing: border-box;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -29,21 +77,32 @@ body {
     margin-right: auto;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 /*==========шапка==========*/
+.top-line {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ececec;
+} 
+
+.navigation {
+    display: flex;
+}
+.container-top-line {
+    display: flex;
+    align-items: center;
+}
 
 .logo-home {
     font-family: var(--logo-font);
-    font-size: 26px;
     font-weight: 700;
+    font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
+    margin-right: 93px;
 }
 
 .logo-web {
@@ -52,6 +111,13 @@ a {
 
 .logo-studio {
     color: var(--secondary-logo-color);
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+.nav-item:not(:last-child) {
+    margin-right: 50px;
 }
 
 .nav-link {
@@ -70,6 +136,13 @@ a {
 .nav-link:focus {
     color: var(--accent-color);
 }
+.top-line-contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+}
 
 .contacts-link {
     font-weight: 500;
@@ -86,6 +159,15 @@ a {
 /* ============банер/фильтер============= */
 .hero {
     background-color: var(--background-hero);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.container-hero {
+    box-sizing: border-box;
+    max-width: 670px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
 }
 
 .hero-slogan {
@@ -96,6 +178,7 @@ a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-text-color);
+    margin-bottom: 30px;
 }
 
 .modal-btn {
@@ -110,11 +193,21 @@ a {
     color: var(--hero-text-color);
     cursor: pointer;
     background-color: var(--background-btn);
+    padding: 10px 32px;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: var(--accent-color);
+}
+
+.filter-buttons-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .filter-btn {
@@ -129,6 +222,12 @@ a {
     color: var(--titl-text-color);
     cursor: pointer;
     background-color: var(--background-team);
+    padding: 6px 22px;
+    border-radius: 4px;
+    display: block;
+}
+.filter-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 .filter-btn:hover,
@@ -137,6 +236,19 @@ a {
     color: var(--hero-text-color);
 }
 /* ======================особености======================== */
+.features-list {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-left: -30;
+    margin-top: -30;
+}
+.features-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
 .title-feature {
     font-weight: 700;
     font-size: 14px;
@@ -144,6 +256,7 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--titl-text-color);
+    margin-bottom: 10px;
 }
 
 .descktription-feature {
@@ -154,6 +267,10 @@ a {
 }
 
 /* ========================Чем мы  занимаемся===================== */
+.gallery-previews {
+    padding-top: 0;
+}
+
 .preview-title {
     font-weight: 700;
     font-size: 36px;
@@ -161,6 +278,12 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--titl-text-color);
+    margin-bottom: 50px;
+}
+.preview-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 /* ======================Наша команда=========================== */
@@ -175,6 +298,58 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--titl-text-color);
+    margin-bottom: 50px;
+}
+.team-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-top: -30px;
+}
+.projects-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.card-item {
+    flex-basis: calc((100% - 120px) / 4);
+    margin-right: 30px;
+    margin-top: 30px;
+}
+.project-item {
+    flex-basis: calc((100% - 90px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.card-title {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: var(--footer-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+}
+.card-project {
+    padding: 20px 24px;
+    background: var(--footer-text-color);
+    border: 1px solid #eeeeee;
+    border-top: none;
+    box-sizing: border-box;
 }
 
 .member-name {
@@ -184,6 +359,7 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--titl-text-color);
+    margin-bottom: 10px;
 }
 
 .project-name {
@@ -215,6 +391,8 @@ a {
 /* =======================Подвал=========================== */
 .footer {
     background-color: var(--background-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -223,6 +401,8 @@ a {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .footer-logo-web {
@@ -232,9 +412,11 @@ a {
 .footer-logo-studio {
     color: var(--secondary-logo-footer-color);
 }
+.footer-contact-item:not(:last-child) {
+    margin-bottom: 9px;
+}
 
-.contact-link,
-.map {
+.footer-contact-link {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
